@@ -22,7 +22,7 @@ verificar.addEventListener("click", function () {
     // Obtener el valor del input con id "cadenaInput"
     let cadenaOriginal = document.getElementById("cadenaInput").value;
 
-    // Convertir los caracteres a minusculas
+    // Convertir la cadena original a minusculas
     let cadenaMinusculas = cadenaOriginal.toLowerCase();
     
     // Obtener la cadena invertida llamando a la función invertirCadena
@@ -34,13 +34,13 @@ verificar.addEventListener("click", function () {
         resultado.textContent = 'Ingrese una palabra para verificar si es un palíndromo o no'
         resultado.classList.add("with-content");
     }
-    // Verificar si la cadena original es igual a la invertida
+    // Verificar si la cadena en minusculas es igual a la invertida
     else if (cadenaMinusculas == cadenaInvertida) {
         // Si son iguales, mostrar un mensaje indicando que es un palíndromo
         resultado.innerHTML = 'La palabra "' + cadenaOriginal + '" SI es un palíndromo ya que se lee igual en ambas direcciones';
         resultado.classList.add("with-content");
     }
-    // Verificar si la cadena original no es igual a la invertida
+    // Verificar si la cadena en minusculas no es igual a la invertida
     else if (cadenaMinusculas != cadenaInvertida) {
         // Si no son iguales, mostrar un mensaje indicando que no es un palíndromo
         resultado.innerHTML = 'La palabra "' + cadenaOriginal + '" NO es un palíndromo ya que no se lee igual en ambas direcciones';
