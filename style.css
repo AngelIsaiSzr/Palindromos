@@ -1,0 +1,112 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(45deg, #00bfff, #1e90ff, #4169e1, #8a2be2, #da70d6);
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    color: rgba(240, 248, 255, 0.928);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: rgba(240, 248, 255, 0.891);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+input {
+    margin: 0 auto;
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+}
+
+button {
+    margin: 0 auto;
+    margin-top: 30px;
+    display: block;
+    height: 40px;
+    width: 300px;
+    padding: 7px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: white;
+    background-color: #4CAF50;
+    cursor: pointer;
+}
+
+#resultado {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: 5px;
+    max-width: 270px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2c4;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: width 0.3s ease-in-out;
+    word-wrap: break-word;
+}
+
+#resultado.with-content {
+    width: auto;
+}
+
+footer {
+    margin-top: auto;
+    box-shadow: 0px 0px 25px #222;
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    font-family: "Lucida Handwriting", cursive, sans-serif;
+    font-style: italic;
+    box-sizing: border-box;
+    border-top: 3px solid #ffffffc7;
+}
