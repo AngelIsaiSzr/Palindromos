@@ -25,8 +25,14 @@ verificar.addEventListener("click", function () {
     // Convertir la cadena original a minusculas
     let cadenaMinusculas = cadenaOriginal.toLowerCase();
 
-    // Rememplazar todos los espacios por una cadena vacía
+    // Reemplazar todos los espacios por una cadena vacía
     cadenaMinusculas = cadenaMinusculas.replace(/ /g, '');
+
+    // Reemplazar todos todos los signos de puntuación por una cadena vacía
+    cadenaMinusculas = cadenaMinusculas.replace(/[.,'"¿¡!?:;()]/g, '');
+
+    // Reemplazar todos los caracteres acentuados en sus caracteres básicos
+    cadenaMinusculas = cadenaMinusculas.normalize("NFD").replace(/\p{Diacritic}/gu, '');
     
     // Obtener la cadena invertida llamando a la función invertirCadena
     let cadenaInvertida = invertirCadena(cadenaMinusculas);
