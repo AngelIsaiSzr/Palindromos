@@ -22,8 +22,11 @@ verificar.addEventListener("click", function () {
     // Obtener el valor del input con id "cadenaInput"
     let cadenaOriginal = document.getElementById("cadenaInput").value;
 
+    // Convertir los caracteres a minusculas
+    let cadenaMinusculas = cadenaOriginal.toLowerCase();
+    
     // Obtener la cadena invertida llamando a la función invertirCadena
-    let cadenaInvertida = invertirCadena(cadenaOriginal);
+    let cadenaInvertida = invertirCadena(cadenacadenaMinusculas);
 
     // Verificar si la cadena original está vacía
     if (cadenaOriginal == "") {
