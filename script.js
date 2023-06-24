@@ -24,6 +24,9 @@ verificar.addEventListener("click", function () {
 
     // Convertir la cadena original a minusculas
     let cadenaMinusculas = cadenaOriginal.toLowerCase();
+
+    // Rememplazar todos los espacios por una cadena vacía
+    cadenaMinusculas = cadenaMinusculas.replace(/ /g, '');
     
     // Obtener la cadena invertida llamando a la función invertirCadena
     let cadenaInvertida = invertirCadena(cadenaMinusculas);
