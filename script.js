@@ -26,7 +26,7 @@ verificar.addEventListener("click", function () {
     let cadenaMinusculas = cadenaOriginal.toLowerCase();
     
     // Obtener la cadena invertida llamando a la función invertirCadena
-    let cadenaInvertida = invertirCadena(cadenacadenaMinusculas);
+    let cadenaInvertida = invertirCadena(cadenaMinusculas);
 
     // Verificar si la cadena original está vacía
     if (cadenaOriginal == "") {
