@@ -35,13 +35,13 @@ verificar.addEventListener("click", function () {
         resultado.classList.add("with-content");
     }
     // Verificar si la cadena original es igual a la invertida
-    else if (cadenaOriginal == cadenaInvertida) {
+    else if (cadenaMinusculas == cadenaInvertida) {
         // Si son iguales, mostrar un mensaje indicando que es un palíndromo
         resultado.innerHTML = 'La palabra "' + cadenaOriginal + '" SI es un palíndromo ya que se lee igual en ambas direcciones';
         resultado.classList.add("with-content");
     }
     // Verificar si la cadena original no es igual a la invertida
-    else if ((cadenaOriginal != cadenaInvertida)) {
+    else if (cadenaMinusculas != cadenaInvertida) {
         // Si no son iguales, mostrar un mensaje indicando que no es un palíndromo
         resultado.innerHTML = 'La palabra "' + cadenaOriginal + '" NO es un palíndromo ya que no se lee igual en ambas direcciones';
         resultado.classList.add("with-content");
